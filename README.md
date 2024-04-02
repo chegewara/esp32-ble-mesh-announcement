@@ -5,6 +5,49 @@ Library should help people like me, with minimum knowledge about ble mesh, to cr
 I hope to make library flexible, which means it will have default callbacks registered in esp-idf, which will pass events to every class object which should receive event. And user can also override default callbacks and register its own.
 This project is nothing like my other repositories. I want to make it mature, fully documented and ready to use by everyone.
 
+### Implemented
+This is only demo version or maybe alpha. Only few SIG models are implemented and most likely not finished yet.
+
+
+#### foundation models
+- config srv        - mostly done - missing heartbeat pub/sub
+- config cli        - partially
+- health srv        - partially
+- health cli        - partially
+
+#### generic models
+- gen on/off srv    - partially
+- gen on/off cli    - ready
+- gen level srv     - partially
+- gen level cli     - ready
+- gen loc srv       - partially
+- gen loc setup srv - partially
+- gen loc cli       - ready
+- gen battery srv   - not tested
+- gen battery cli   - not tested
+
+#### sensor models
+- 
+
+#### time and scene models
+- time srv          - partially
+- time setup srv    - partially
+- time cli          - missing functions
+- scene srv         - partially
+- scene setup srv   - partially
+- scene cli         - partially
+
+`scene models needs to be added to other models, to handle scene store/recall/delete`
+
+#### light models
+- lightness srv - partially
+- lightness cli - partially
+- light hsl srv - partially
+- light hsl cli - partially
+
+#### vendor models
+- vendor cli/srv - partially (there is only 1 model for cli and srv)
+
 
 ## Example code
 Thats most basic code which allows to create mesh device with generic level server model. Also to control proxy and relay features on node.
